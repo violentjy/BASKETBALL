@@ -101,10 +101,14 @@ func isPrime(n:Int) -> Bool
 }
 
 
-for var o in arr5
-{
-    if (isPrime(n:o))
-    {
-        print("\(o)")
-    }
-}
+//for var o in arr5
+//{
+//    if (isPrime(n:o))
+//    {
+//        print("\(o)")
+//    }
+//}
+
+let res5 = arr5.filter({isPrime(n:$0)})
+
+print(res5)
